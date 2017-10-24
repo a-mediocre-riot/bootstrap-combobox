@@ -20,10 +20,10 @@ h3 {
   margin-top: 30px;
   margin-bottom: 20px; }
 
-.combobox {
+.combobox-container {
   position: relative; }
 
-.combobox .dropdown-menu {
+.combobox-container .dropdown-menu {
   position: absolute;
   left: 5x;
   right: 5px;

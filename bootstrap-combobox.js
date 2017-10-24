@@ -14,7 +14,7 @@
 	});
 
 	$(document).mouseup(function(e) {
-		$(".combobox").each(function(){
+		$(".combobox-container").each(function(){
 			var $this = $(this);
 			if(!$this.is(e.target) && $this.has(e.target).length === 0)
 				$this.find(".dropdown-menu").hide();
@@ -27,10 +27,10 @@
 	 *   selected value.
 	 * @callback
 	 */
-	$(document).on("click", ".combobox a:not(.add-new-btn)", function(event){
+	$(document).on("click", ".combobox-container a:not(.add-new-btn)", function(event){
 		event.preventDefault();
 
-		var $combobox = $(this).closest(".combobox");
+		var $combobox = $(this).closest(".combobox-container");
 		var $select = $combobox.find("select");
 		var value = $(this).data("value");
 
@@ -40,8 +40,8 @@
 		$combobox.find(".dropdown-menu").hide();
 	}); // On Click .combobox li a
 
-	$(document).on("click", ".combobox .btn, .combobox input", function() {
-		$(this).closest(".combobox").find(".dropdown-menu").toggle();
+	$(document).on("click", ".combobox-container .btn, .combobox-container input", function() {
+		$(this).closest(".combobox-container").find(".dropdown-menu").toggle();
 	});
 
 	/*****************************************************************************
@@ -49,8 +49,8 @@
 	 *   only show those options that match the input value.
 	 * @callback
 	 */
-	$(document).on("keyup", ".combobox input", function() {
-		FilterDropdownResults($(this).closest(".combobox"));
+	$(document).on("keyup", ".combobox-container input", function() {
+		FilterDropdownResults($(this).closest(".combobox-container"));
 	});
 
 	/*****************************************************************************
@@ -62,7 +62,7 @@
 		var addNewBtn = $select.data("add");
 
 		// Grab the important bits so we can use them later.
-		var $combobox = $("<div/>").appendTo($select.parent());
+		var $combobox = $("<div/>").addClass("combobox-container").appendTo($select.parent());
 		var $input  = $("<input/>");
 
 		$combobox.append($select);
