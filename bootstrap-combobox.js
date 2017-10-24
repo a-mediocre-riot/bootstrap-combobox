@@ -55,15 +55,17 @@
 
 	/*****************************************************************************
 	 * Builds a combobox from a div containing an input and select element.
-	 * @param [jQuery] $combobox The div containing the input and select element.
+	 * @param $combobox The div containing the input and select element.
 	 */
-	function BuildCombobox($combobox) {
+	function BuildCombobox($select) {
 		// Flag to include an "Add New" button in the dropdown.
-		var addNewBtn = $combobox.data("add");
+		var addNewBtn = $select.data("add");
 
 		// Grab the important bits so we can use them later.
-		var $select = $combobox.find("select");
-		var $input  = $combobox.find("input");
+		var $combobox = $("<div/>").appendTo($select.parent());
+		var $input  = $("<input/>");
+
+		$combobox.append($select);
 
 		// Create the input-group wrapper and put it in the combobox container.
 		var $inputGroup = $("<div/>").addClass("input-group").appendTo($combobox);

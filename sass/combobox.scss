@@ -1,0 +1,75 @@
+// ==== FONTS
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lato');
+
+// ==== VARIABLES
+$color-black: #392F5A;
+$color-dark:  #835887;
+$color-bold:  #F4DAB6;
+$color-light: #C29EAC;
+$color-white: #EEEDEB;
+
+$color-bg: $color-white;
+$color-text: $color-black;
+
+$font-stack-content: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
+$font-stack-header:  "Dosis", "Helvetica Neue", helvetica, arial, sans-serif;
+
+$bs-red: #A94442;
+
+// ==== STYLES
+html {
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+
+body {
+	font-size: 10px;
+	font-size: 1.0rem;
+	font-family: $font-stack-content;
+	color: $color-black;
+
+	background-color: $color-bg;
+
+	margin: 30px;
+}
+
+h3 {
+	font-size: 30px;
+	font-size: 3.0rem;
+	font-family: $font-stack-header;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.combobox {
+	position: relative;
+}
+
+.combobox .dropdown-menu {
+	position: absolute;
+	left: 5x;
+	right: 5px;
+	width: auto;
+	max-height: 150px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.has-error {
+	button,
+	button:hover,
+	button:active,
+	button:focus,
+	button:disabled {
+		color: $bs-red !important;
+		border-color: $bs-red !important;
+	}
+
+	button:disabled {
+		opacity: 1;
+		background-color: #EEDDDD !important;
+	}
+}

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Lato");
+html {
+  font-size: 10px;
+  font-size: 1.0rem; }
+
+body {
+  font-size: 10px;
+  font-size: 1.0rem;
+  font-family: "Lato", "Helvetica Neue", helvetica, arial, sans-serif;
+  color: #392F5A;
+  background-color: #EEEDEB;
+  margin: 30px; }
+
+h3 {
+  font-size: 30px;
+  font-size: 3.0rem;
+  font-family: "Dosis", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.combobox {
+  position: relative; }
+
+.combobox .dropdown-menu {
+  position: absolute;
+  left: 5x;
+  right: 5px;
+  width: auto;
+  max-height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.has-error button,
+.has-error button:hover,
+.has-error button:active,
+.has-error button:focus,
+.has-error button:disabled {
+  color: #A94442 !important;
+  border-color: #A94442 !important; }
+.has-error button:disabled {
+  opacity: 1;
+  background-color: #EEDDDD !important; }
+
+/*# sourceMappingURL=combobox.css.map */
