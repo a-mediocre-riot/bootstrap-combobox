@@ -7,8 +7,7 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel src -d lib"
+    "build": "./node_modules/.bin/babel src/babel -d lib/js && sass --update src/sass:lib/css"
   },
   "repository": {
     "type": "git",
