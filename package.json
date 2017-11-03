@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-combobox",
+  "version": "1.0.0",
+  "description": "A combobox for bootstrap.",
+  "main": "bootstrap-combobox.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-mediocre-riot/bootstrap-combobox.git"
+  },
+  "author": "Gina Ribniscky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-mediocre-riot/bootstrap-combobox/issues"
+  },
+  "homepage": "https://github.com/a-mediocre-riot/bootstrap-combobox#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
